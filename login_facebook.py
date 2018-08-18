@@ -1,6 +1,6 @@
 import time
 from selenium import webdriver
-import pyautogui
+from selenium.webdriver.common.keys import Keys
 import chromedriver_binary
 
 noidung=input("What yourcontent ? ")
@@ -26,7 +26,7 @@ time.sleep(5)
 time.sleep(1)
 driver.get('https://www.facebook.com/groups/j2team.community/');
 time.sleep(3)
-pyautogui.press('esc')
+elem.send_keys(Keys.ESC)
 # Nhấn vào đăng bài
 time.sleep(5)
 # Ấn vào nút bảng tin
