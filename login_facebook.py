@@ -1,11 +1,10 @@
 import time
 from selenium import webdriver
 import pyautogui
-
-
+import chromedriver_binary
 
 noidung=input("What yourcontent ? ")
-driver = webdriver.Chrome('C:\\Users\\Khanh\\Desktop\\chromedriver.exe')  # Optional argument, if not specified will search path.
+driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
 driver.get('https://m.facebook.com/');
 # time.sleep(5) # Let the user actually see something!
 print('Login success!')
@@ -25,7 +24,7 @@ time.sleep(5)
 
 # ấn vào nút đăng bài
 time.sleep(1)
-driver.get('https://facebook.com/');
+driver.get('https://www.facebook.com/groups/j2team.community/');
 time.sleep(3)
 pyautogui.press('esc')
 # Nhấn vào đăng bài
